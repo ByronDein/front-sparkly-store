@@ -46,11 +46,11 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       <header className="bg-[#582B11] text-white p-4">
-        <h1 className="text-3xl font-bold">Tienda Sparkly</h1>
+        <h1 className="text-3xl font-bold text-[#BD8B9C]">Tienda Sparkly</h1>
       </header>
-      <main className="p-8">
-        <h2 className="text-2xl font-semibold mb-6">Nuestros Productos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-[] gap-6">
+      <main className="p-8 container mx-auto">
+        <h2 className="text-2xl font-semibold mb-6 text-[#BD8B9C]">Nuestros Productos</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
           {products.map((product) => (
             <div key={product.id} className="border justify-end flex flex-col p-4 rounded-lg shadow-lg">
               <Image
@@ -60,13 +60,13 @@ export default function HomePage() {
                 height={400}
                 className="w-full h-auto object-cover "
               />
-                <h3 className="text-xl font-semibold mt-4 ">{product.name}</h3>
+                <h3 className="text-xl font-semibold mt-4 text-[#BD8B9C] ">{product.name}</h3>
               <p className="text-gray-700 mt-2 ">{product.price}</p>
             </div>
           ))}
         </div>
       </main>
-      <footer className="bg-[#582B11] text-white p-4 mt-8">
+      <footer className="bg-[#582B11] text-[#BD8B9C] p-4 mt-8">
         <p className="text-center">&copy; 2025 Tienda Sparkly. Todos los derechos reservados.</p>
       </footer>
     </div>
